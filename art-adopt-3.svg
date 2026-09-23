@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <filter id="sketch-cms" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="#FCF8F2" rx="12"/>
+  <rect x="15" y="15" width="370" height="270" fill="#FFF" rx="8" stroke="#DDB892" stroke-width="2.5" stroke-dasharray="6,4"/>
+  
+  <g filter="url(#sketch-cms)">
+    <!-- Header Banner -->
+    <rect x="40" y="25" width="320" height="35" rx="6" fill="#F4A261" stroke="#8A421D" stroke-width="2"/>
+    <text x="200" y="48" font-family="'Mali', 'Sarabun', sans-serif" font-size="16" font-weight="bold" fill="#FFF" text-anchor="middle">📋 COMMISSION MENU & RATES</text>
+
+    <!-- Column 1: Bust / Headshot -->
+    <rect x="35" y="70" width="100" height="150" rx="8" fill="#FFFDF8" stroke="#E6CCB2" stroke-width="2"/>
+    <circle cx="85" cy="105" r="24" fill="#FFE5D9" stroke="#9C6644" stroke-width="1.5"/>
+    <text x="85" y="145" font-family="'Mali', sans-serif" font-size="12" font-weight="bold" fill="#6F4E37" text-anchor="middle">Bust-up</text>
+    <text x="85" y="165" font-family="'Mali', sans-serif" font-size="14" font-weight="bold" fill="#E76F51" text-anchor="middle">฿350+</text>
+    <text x="85" y="185" font-family="'Mali', sans-serif" font-size="10" fill="#7F5539" text-anchor="middle">Personal Use</text>
+    <rect x="50" y="195" width="70" height="18" rx="9" fill="#2A9D8F"/>
+    <text x="85" y="208" font-family="'Mali', sans-serif" font-size="10" fill="#FFF" font-weight="bold" text-anchor="middle">OPEN</text>
+
+    <!-- Column 2: Half Body -->
+    <rect x="150" y="70" width="100" height="150" rx="8" fill="#FFFDF8" stroke="#E6CCB2" stroke-width="2"/>
+    <ellipse cx="200" cy="105" rx="20" ry="26" fill="#FFE5D9" stroke="#9C6644" stroke-width="1.5"/>
+    <text x="200" y="145" font-family="'Mali', sans-serif" font-size="12" font-weight="bold" fill="#6F4E37" text-anchor="middle">Half Body</text>
+    <text x="200" y="165" font-family="'Mali', sans-serif" font-size="14" font-weight="bold" fill="#E76F51" text-anchor="middle">฿650+</text>
+    <text x="200" y="185" font-family="'Mali', sans-serif" font-size="10" fill="#7F5539" text-anchor="middle">Full Color</text>
+    <rect x="165" y="195" width="70" height="18" rx="9" fill="#2A9D8F"/>
+    <text x="200" y="208" font-family="'Mali', sans-serif" font-size="10" fill="#FFF" font-weight="bold" text-anchor="middle">OPEN</text>
+
+    <!-- Column 3: Full Body / Chibi -->
+    <rect x="265" y="70" width="100" height="150" rx="8" fill="#FFFDF8" stroke="#E6CCB2" stroke-width="2"/>
+    <ellipse cx="315" cy="100" rx="16" ry="16" fill="#FFE5D9" stroke="#9C6644" stroke-width="1.5"/>
+    <rect x="303" y="116" width="24" height="20" rx="4" fill="#F4A261" stroke="#9C6644" stroke-width="1.5"/>
+    <text x="315" y="145" font-family="'Mali', sans-serif" font-size="12" font-weight="bold" fill="#6F4E37" text-anchor="middle">Full Character</text>
+    <text x="315" y="165" font-family="'Mali', sans-serif" font-size="14" font-weight="bold" fill="#E76F51" text-anchor="middle">฿1,200+</text>
+    <text x="315" y="185" font-family="'Mali', sans-serif" font-size="10" fill="#7F5539" text-anchor="middle">Detail BG +฿400</text>
+    <rect x="280" y="195" width="70" height="18" rx="9" fill="#E76F51"/>
+    <text x="315" y="208" font-family="'Mali', sans-serif" font-size="10" fill="#FFF" font-weight="bold" text-anchor="middle">3 SLOTS</text>
+
+    <!-- Bottom Notice -->
+    <text x="200" y="248" font-family="'Mali', 'Sarabun', sans-serif" font-size="11" fill="#8D5B4C" text-anchor="middle">✎ ยินดีรับงานวาดแฟนอาร์ต, ออริจินอล, วาดภาพประกอบ & ออกแบบตัวละคร</text>
+  </g>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <filter id="sketch-art1" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    <linearGradient id="bg-art1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFE8D6" />
+      <stop offset="100%" stop-color="#F3C583" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg-art1)" rx="12" filter="url(#sketch-art1)"/>
+  <rect x="15" y="15" width="370" height="270" fill="#FFFDF8" rx="8" stroke="#DDB892" stroke-width="2" stroke-dasharray="6,4"/>
+  
+  <g filter="url(#sketch-art1)">
+    <!-- Cute Ramen Cat with Chopsticks -->
+    <!-- Cat Head -->
+    <ellipse cx="200" cy="140" rx="65" ry="55" fill="#FAF0CA" stroke="#6F4E37" stroke-width="3"/>
+    <!-- Cat Ears -->
+    <polygon points="145,105 130,65 170,88" fill="#FAF0CA" stroke="#6F4E37" stroke-width="3" stroke-linejoin="round"/>
+    <polygon points="142,100 136,75 162,90" fill="#FFB4A2"/>
+    <polygon points="255,105 270,65 230,88" fill="#FAF0CA" stroke="#6F4E37" stroke-width="3" stroke-linejoin="round"/>
+    <polygon points="258,100 264,75 238,90" fill="#FFB4A2"/>
+    <!-- Cat Face -->
+    <!-- Eyes -->
+    <path d="M 170 135 Q 180 128 190 135" fill="none" stroke="#4A2810" stroke-width="3" stroke-linecap="round"/>
+    <path d="M 210 135 Q 220 128 230 135" fill="none" stroke="#4A2810" stroke-width="3" stroke-linecap="round"/>
+    <!-- Pink Nose & Cute Mouth -->
+    <polygon points="200,144 196,140 204,140" fill="#E56B6F"/>
+    <path d="M 194 148 Q 200 154 206 148" fill="none" stroke="#4A2810" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Blushes -->
+    <ellipse cx="165" cy="145" rx="8" ry="5" fill="#FFB4A2" opacity="0.7"/>
+    <ellipse cx="235" cy="145" rx="8" ry="5" fill="#FFB4A2" opacity="0.7"/>
+    <!-- Whiskers -->
+    <line x1="145" y1="138" x2="120" y2="135" stroke="#6F4E37" stroke-width="2"/>
+    <line x1="145" y1="146" x2="122" y2="149" stroke="#6F4E37" stroke-width="2"/>
+    <line x1="255" y1="138" x2="280" y2="135" stroke="#6F4E37" stroke-width="2"/>
+    <line x1="255" y1="146" x2="278" y2="149" stroke="#6F4E37" stroke-width="2"/>
+    
+    <!-- Ramen Bowl In Front of Cat -->
+    <path d="M 130 185 C 130 230 270 230 270 185 Z" fill="#E76F51" stroke="#5C2415" stroke-width="3"/>
+    <ellipse cx="200" cy="185" rx="70" ry="14" fill="#F4A261" stroke="#5C2415" stroke-width="2"/>
+    <!-- Noodles inside bowl -->
+    <ellipse cx="200" cy="184" rx="60" ry="10" fill="#F4D06F"/>
+    <!-- Toppings -->
+    <circle cx="170" cy="182" r="12" fill="#FAF0CA" stroke="#D1496D" stroke-width="2"/>
+    <ellipse cx="225" cy="184" rx="14" ry="9" fill="#9C6644"/>
+    <rect x="235" y="165" width="16" height="24" rx="2" fill="#2D3A2F" transform="rotate(15, 235, 165)"/>
+    
+    <!-- Cat Paws holding chopsticks -->
+    <circle cx="140" cy="175" r="12" fill="#FAF0CA" stroke="#6F4E37" stroke-width="2"/>
+    <circle cx="260" cy="175" r="12" fill="#FAF0CA" stroke="#6F4E37" stroke-width="2"/>
+    <line x1="125" y1="185" x2="245" y2="145" stroke="#A06A42" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- Steam swirls -->
+    <path d="M 185 160 Q 180 150 188 140 Q 192 130 185 120" fill="none" stroke="#C59B76" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 215 160 Q 220 150 212 140 Q 208 130 215 120" fill="none" stroke="#C59B76" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  </g>
+  
+  <text x="30" y="270" font-family="'Mali', 'Sarabun', sans-serif" font-size="14" font-weight="bold" fill="#6F4E37">🍜 2D Illustration: "Ramen Cat Cafe"</text>
+  <text x="340" y="270" font-family="'Mali', sans-serif" font-size="12" fill="#9C6644">2026</text>
+</svg>

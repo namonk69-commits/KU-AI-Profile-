@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%">
+  <defs>
+    <filter id="pencil-texture-scallion" x="-20%" y="-20%" width="140%" height="140%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.05" numOctaves="2" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+  
+  <g filter="url(#pencil-texture-scallion)">
+    <!-- Scallion Ring 1 -->
+    <g transform="translate(10, 10)">
+      <ellipse cx="25" cy="25" rx="20" ry="14" fill="#3D7E44" stroke="#25542B" stroke-width="2.5" transform="rotate(-15, 25, 25)"/>
+      <ellipse cx="25" cy="25" rx="14" ry="9" fill="#9DD78E" stroke="#25542B" stroke-width="1.5" transform="rotate(-15, 25, 25)"/>
+      <ellipse cx="25" cy="25" rx="7" ry="4" fill="#EAF7E4" transform="rotate(-15, 25, 25)"/>
+    </g>
+
+    <!-- Scallion Ring 2 -->
+    <g transform="translate(45, 40)">
+      <ellipse cx="22" cy="22" rx="18" ry="12" fill="#4B9553" stroke="#25542B" stroke-width="2.5" transform="rotate(25, 22, 22)"/>
+      <ellipse cx="22" cy="22" rx="12" ry="7" fill="#B3E6A5" stroke="#25542B" stroke-width="1.5" transform="rotate(25, 22, 22)"/>
+      <ellipse cx="22" cy="22" rx="6" ry="3" fill="#F4FBF1" transform="rotate(25, 22, 22)"/>
+    </g>
+
+    <!-- Pencil sketch marks -->
+    <path d="M 20 65 L 26 75 M 75 25 L 82 32" stroke="#235028" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+</svg>

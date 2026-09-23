@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 400" width="100%" height="100%">
+  <defs>
+    <filter id="pencil-texture-chopsticks" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+  
+  <g filter="url(#pencil-texture-chopsticks)">
+    <!-- Chopstick 1 (Back) -->
+    <path d="M 310 30 L 110 135 L 105 142 L 305 45 Z" 
+          fill="#A67C52" stroke="#66462C" stroke-width="2" stroke-linejoin="round"/>
+
+    <!-- Noodles Hanging over chopsticks -->
+    <!-- Top fold of noodles -->
+    <path d="M 100 130 Q 120 120 150 128 Q 180 135 200 130" 
+          fill="none" stroke="#F6BA35" stroke-width="8" stroke-linecap="round"/>
+    <path d="M 105 138 Q 130 130 160 136 Q 185 142 195 138" 
+          fill="none" stroke="#FFD066" stroke-width="7" stroke-linecap="round"/>
+
+    <!-- Chopstick 2 (Front) -->
+    <path d="M 300 10 L 95 140 L 90 148 L 295 24 Z" 
+          fill="#C49A6C" stroke="#7A5233" stroke-width="2.5" stroke-linejoin="round"/>
+    <!-- Chopstick Red Ribbon/End -->
+    <path d="M 290 15 L 300 10 L 295 24 L 285 28 Z" fill="#D94B4B"/>
+
+    <!-- Hanging Noodle Strands -->
+    <!-- Noodle Strand 1 -->
+    <path d="M 115 135 C 110 180, 125 240, 115 290 C 105 340, 120 380, 118 400" 
+          fill="none" stroke="#E5A128" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M 115 135 C 110 180, 125 240, 115 290 C 105 340, 120 380, 118 400" 
+          fill="none" stroke="#FFD875" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Noodle Strand 2 -->
+    <path d="M 130 136 C 138 185, 125 230, 135 295 C 145 350, 130 385, 132 400" 
+          fill="none" stroke="#F5B338" stroke-width="7" stroke-linecap="round"/>
+    <path d="M 130 136 C 138 185, 125 230, 135 295 C 145 350, 130 385, 132 400" 
+          fill="none" stroke="#FFF099" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Noodle Strand 3 -->
+    <path d="M 148 138 C 155 190, 142 250, 152 310 C 160 360, 148 385, 150 400" 
+          fill="none" stroke="#D9941E" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M 148 138 C 155 190, 142 250, 152 310 C 160 360, 148 385, 150 400" 
+          fill="none" stroke="#FED976" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Noodle Strand 4 -->
+    <path d="M 165 137 C 172 185, 160 235, 170 300 C 178 350, 168 385, 170 400" 
+          fill="none" stroke="#F5B338" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M 165 137 C 172 185, 160 235, 170 300 C 178 350, 168 385, 170 400" 
+          fill="none" stroke="#FFF3A8" stroke-width="3" stroke-linecap="round"/>
+
+    <!-- Noodle Strand 5 -->
+    <path d="M 182 135 C 190 180, 175 230, 185 285 C 192 335, 185 375, 188 400" 
+          fill="none" stroke="#E5A128" stroke-width="6" stroke-linecap="round"/>
+
+    <!-- Broth Droplets / Steam / Sparkles -->
+    <circle cx="120" cy="210" r="3" fill="#F6BA35" opacity="0.8"/>
+    <circle cx="175" cy="260" r="3.5" fill="#F6BA35" opacity="0.8"/>
+    <circle cx="140" cy="340" r="2.5" fill="#FFF" opacity="0.9"/>
+    <ellipse cx="205" cy="110" rx="6" ry="12" fill="#FFF" opacity="0.4" transform="rotate(30, 205, 110)"/>
+  </g>
+</svg>

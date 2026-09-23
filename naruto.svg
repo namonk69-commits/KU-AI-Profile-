@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <filter id="pencil-texture-naruto" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+  
+  <g filter="url(#pencil-texture-naruto)">
+    <!-- Shadow / 3D edge -->
+    <path d="M 32 80 C 28 42, 60 22, 92 20 C 128 18, 148 48, 146 86 C 144 122, 118 146, 80 148 C 45 150, 35 118, 32 80 Z" 
+          fill="#E8DDD2" stroke="#B8A799" stroke-width="2"/>
+
+    <!-- White Narutomaki base with scalloped edges -->
+    <path d="M 80 24 C 92 22, 102 26, 112 28 C 122 32, 134 38, 138 48 C 144 58, 142 70, 144 80 C 146 92, 142 104, 136 114 C 130 124, 120 132, 108 138 C 96 142, 84 144, 72 142 C 60 140, 48 134, 40 124 C 32 114, 30 102, 28 90 C 26 78, 30 66, 36 56 C 42 46, 52 38, 64 32 C 70 28, 75 25, 80 24 Z" 
+          fill="#FAF6F0" stroke="#8C5C42" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Outer light pink tone -->
+    <path d="M 80 32 C 105 30, 132 45, 134 78 C 136 112, 112 134, 80 134 C 48 134, 36 108, 38 78 C 40 48, 60 34, 80 32 Z" 
+          fill="#FFF0F3" opacity="0.6"/>
+
+    <!-- Pink Spiral Swirl -->
+    <path d="M 80 44 C 102 44, 120 60, 120 80 C 120 100, 100 118, 78 116 C 58 114, 46 96, 50 78 C 54 62, 70 54, 86 58 C 100 62, 106 76, 102 88 C 98 98, 86 104, 76 100 C 68 96, 68 86, 72 80 C 76 74, 84 76, 84 82" 
+          fill="none" stroke="#F46286" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <path d="M 80 44 C 102 44, 120 60, 120 80 C 120 100, 100 118, 78 116 C 58 114, 46 96, 50 78 C 54 62, 70 54, 86 58 C 100 62, 106 76, 102 88 C 98 98, 86 104, 76 100 C 68 96, 68 86, 72 80 C 76 74, 84 76, 84 82" 
+          fill="none" stroke="#D83F67" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.4"/>
+
+    <!-- Pencil sketch marks -->
+    <path d="M 45 60 L 52 70 M 115 65 L 122 75 M 105 110 L 115 120 M 55 115 L 65 125" 
+          stroke="#C58572" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  </g>
+</svg>

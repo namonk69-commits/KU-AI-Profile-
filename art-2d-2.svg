@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <filter id="sketch-art2" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    <linearGradient id="bg-art2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8F4F8" />
+      <stop offset="100%" stop-color="#FFE5D9" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg-art2)" rx="12" filter="url(#sketch-art2)"/>
+  <rect x="15" y="15" width="370" height="270" fill="#FFFDF8" rx="8" stroke="#DDB892" stroke-width="2" stroke-dasharray="6,4"/>
+  
+  <g filter="url(#sketch-art2)">
+    <!-- Cozy Japanese Ramen Stall Yatai at Sunset -->
+    <!-- Stall Wooden Counter -->
+    <rect x="60" y="150" width="280" height="85" rx="4" fill="#DDB892" stroke="#7F5539" stroke-width="2.5"/>
+    <line x1="60" y1="175" x2="340" y2="175" stroke="#7F5539" stroke-width="2"/>
+    <line x1="130" y1="175" x2="130" y2="235" stroke="#9C6644" stroke-width="1.5"/>
+    <line x1="200" y1="175" x2="200" y2="235" stroke="#9C6644" stroke-width="1.5"/>
+    <line x1="270" y1="175" x2="270" y2="235" stroke="#9C6644" stroke-width="1.5"/>
+
+    <!-- Red Lantern (Chochin) -->
+    <ellipse cx="90" cy="95" rx="22" ry="28" fill="#E63946" stroke="#590D14" stroke-width="2"/>
+    <rect x="78" y="65" width="24" height="6" fill="#2B1810"/>
+    <rect x="80" y="121" width="20" height="6" fill="#2B1810"/>
+    <line x1="90" y1="50" x2="90" y2="65" stroke="#2B1810" stroke-width="2"/>
+    <text x="83" y="102" font-family="'Mali', sans-serif" font-size="14" font-weight="bold" fill="#FFF">拉</text>
+
+    <!-- Noren Curtain (Japanese door curtain) -->
+    <path d="M 125 50 L 325 50 L 325 105 L 280 105 L 280 50 L 275 50 L 275 105 L 230 105 L 230 50 L 225 50 L 225 105 L 180 105 L 180 50 L 175 50 L 175 105 L 125 105 Z" 
+          fill="#3D5A80" stroke="#1D2D44" stroke-width="2"/>
+    <text x="140" y="90" font-family="'Mali', sans-serif" font-size="16" fill="#E0FBFC" font-weight="bold">RAMEN</text>
+    <text x="240" y="90" font-family="'Mali', sans-serif" font-size="16" fill="#E0FBFC" font-weight="bold">ณมน</text>
+
+    <!-- Steaming Bowls on Counter -->
+    <path d="M 160 148 C 160 162 200 162 200 148 Z" fill="#E76F51" stroke="#4A2500" stroke-width="2"/>
+    <path d="M 230 148 C 230 162 270 162 270 148 Z" fill="#2A9D8F" stroke="#1B4332" stroke-width="2"/>
+    
+    <!-- Warm steam clouds -->
+    <ellipse cx="180" cy="130" rx="10" ry="6" fill="#FFF" opacity="0.6"/>
+    <ellipse cx="250" cy="130" rx="10" ry="6" fill="#FFF" opacity="0.6"/>
+    <!-- Cute stars / lights -->
+    <circle cx="320" cy="65" r="4" fill="#F4A261"/>
+    <circle cx="70" cy="135" r="3" fill="#F4A261"/>
+  </g>
+  
+  <text x="30" y="270" font-family="'Mali', 'Sarabun', sans-serif" font-size="14" font-weight="bold" fill="#6F4E37">🏮 2D Background: "Midnight Ramen Stall"</text>
+  <text x="340" y="270" font-family="'Mali', sans-serif" font-size="12" fill="#9C6644">2026</text>
+</svg>

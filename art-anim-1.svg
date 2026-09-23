@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <filter id="sketch-anim1" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+  </defs>
+  <rect width="100%" height="100%" fill="#2B2D42" rx="12"/>
+  <rect x="15" y="15" width="370" height="270" fill="#1F2133" rx="8" stroke="#4A4E69" stroke-width="2"/>
+  
+  <!-- Film Strip Perforations -->
+  <rect x="25" y="25" width="14" height="18" rx="3" fill="#8D99AE"/>
+  <rect x="50" y="25" width="14" height="18" rx="3" fill="#8D99AE"/>
+  <rect x="75" y="25" width="14" height="18" rx="3" fill="#8D99AE"/>
+  <rect x="305" y="25" width="14" height="18" rx="3" fill="#8D99AE"/>
+  <rect x="330" y="25" width="14" height="18" rx="3" fill="#8D99AE"/>
+  <rect x="355" y="25" width="14" height="18" rx="3" fill="#8D99AE"/>
+
+  <!-- Play Button Overlay -->
+  <circle cx="200" cy="140" r="42" fill="#E76F51" opacity="0.9"/>
+  <polygon points="190,122 220,140 190,158" fill="#FFF"/>
+
+  <!-- Animation Motion Lines & Ramen Bowl -->
+  <g filter="url(#sketch-anim1)" transform="translate(0, 10)">
+    <path d="M 140 180 C 140 215 260 215 260 180 Z" fill="#F4A261" stroke="#E9C46A" stroke-width="2"/>
+    <ellipse cx="200" cy="180" rx="60" ry="12" fill="#E76F51"/>
+    <!-- Steam animated waves -->
+    <path d="M 170 160 Q 160 140 175 120 T 170 95" fill="none" stroke="#F4A261" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 200 160 Q 210 135 195 115 T 205 90" fill="none" stroke="#E9C46A" stroke-width="3.5" stroke-linecap="round" opacity="0.8"/>
+    <path d="M 230 160 Q 240 140 225 120 T 235 95" fill="none" stroke="#F4A261" stroke-width="3" stroke-linecap="round" opacity="0.8"/>
+  </g>
+
+  <text x="30" y="265" font-family="'Mali', 'Sarabun', sans-serif" font-size="14" font-weight="bold" fill="#EDF2F4">🎬 2D Animation: "Steaming Hot Ramen Loop"</text>
+  <text x="325" y="265" font-family="'Mali', sans-serif" font-size="12" fill="#8D99AE">24 FPS</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="100%" height="100%">
+  <defs>
+    <filter id="pencil-texture" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="3" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    <linearGradient id="chashu-meat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C59675" />
+      <stop offset="50%" stop-color="#A56D48" />
+      <stop offset="100%" stop-color="#804E2D" />
+    </linearGradient>
+    <linearGradient id="chashu-fat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDF3E7" />
+      <stop offset="50%" stop-color="#EEDAC5" />
+    </linearGradient>
+  </defs>
+  
+  <g filter="url(#pencil-texture)">
+    <!-- Outer Charred Edge -->
+    <path d="M 45 100 C 40 60, 65 35, 105 32 C 145 30, 168 55, 172 95 C 175 135, 145 168, 102 170 C 60 172, 48 140, 45 100 Z" 
+          fill="#6B3F23" stroke="#4A2814" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="200, 3, 50, 2"/>
+    
+    <!-- Outer Fat Layer -->
+    <path d="M 52 100 C 48 68, 70 42, 105 40 C 140 38, 158 60, 162 95 C 165 128, 138 158, 102 160 C 68 162, 55 132, 52 100 Z" 
+          fill="url(#chashu-fat)" stroke="#D4BBA5" stroke-width="2" stroke-linecap="round"/>
+    
+    <!-- Main Meat Spiral -->
+    <path d="M 60 102 C 57 75, 75 52, 105 50 C 135 48, 150 68, 152 96 C 155 122, 132 148, 102 150 C 75 152, 62 128, 60 102 Z" 
+          fill="url(#chashu-meat)" stroke="#6E3E20" stroke-width="2.5" stroke-linecap="round"/>
+    
+    <!-- Inner Swirl Fat Line -->
+    <path d="M 75 105 C 72 85, 85 68, 108 67 C 128 66, 138 80, 140 100 C 142 118, 125 135, 105 135 C 88 135, 80 120, 82 105 C 84 92, 95 82, 108 82 C 118 82, 124 90, 123 100 C 122 108, 115 115, 106 115" 
+          fill="none" stroke="url(#chashu-fat)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+    
+    <!-- Pencil Hatching Details -->
+    <path d="M 70 80 L 85 90 M 120 70 L 135 82 M 130 115 L 145 125 M 75 125 L 90 135 M 95 60 L 105 75 M 100 130 L 110 145" 
+          stroke="#4D2B16" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+    <path d="M 68 95 L 78 110 M 138 90 L 148 105 M 95 90 L 105 102" 
+          stroke="#FBF4EB" stroke-width="1.5" stroke-linecap="round" opacity="0.75"/>
+  </g>
+</svg>

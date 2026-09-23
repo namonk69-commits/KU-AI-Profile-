@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" width="100%" height="100%">
+  <defs>
+    <filter id="pencil-texture-egg" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.5" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    <radialGradient id="yolk-grad" cx="45%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#FFF275" />
+      <stop offset="35%" stop-color="#FF9E1B" />
+      <stop offset="80%" stop-color="#E85D04" />
+      <stop offset="100%" stop-color="#C44500" />
+    </radialGradient>
+  </defs>
+  
+  <g filter="url(#pencil-texture-egg)">
+    <!-- Marinated soy sauce outer rim -->
+    <path d="M 40 80 C 40 45, 60 25, 95 25 C 130 25, 145 50, 142 90 C 140 130, 115 145, 80 145 C 50 145, 40 115, 40 80 Z" 
+          fill="#9C6B46" stroke="#684224" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Egg white -->
+    <path d="M 45 80 C 45 49, 64 30, 95 30 C 126 30, 138 54, 136 88 C 134 124, 110 138, 80 138 C 54 138, 45 112, 45 80 Z" 
+          fill="#FAF4E8" stroke="#D3BD9F" stroke-width="1.5"/>
+
+    <!-- Soft Jammy Yolk -->
+    <ellipse cx="88" cy="85" rx="36" ry="34" fill="url(#yolk-grad)" stroke="#C44500" stroke-width="2"/>
+    
+    <!-- Yolk highlight glossy shine -->
+    <ellipse cx="78" cy="74" rx="10" ry="7" fill="#FFFDF0" opacity="0.85" transform="rotate(-20, 78, 74)"/>
+    <ellipse cx="98" cy="98" rx="4" ry="3" fill="#FFFDF0" opacity="0.6"/>
+
+    <!-- Colored pencil hatchings -->
+    <path d="M 46 65 L 56 75 M 125 50 L 135 60 M 110 125 L 120 135" stroke="#7A4B29" stroke-width="1.5" opacity="0.6"/>
+  </g>
+</svg>

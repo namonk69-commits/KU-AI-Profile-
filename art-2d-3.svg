@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <filter id="sketch-art3" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    <linearGradient id="bg-art3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E8ECE9" />
+      <stop offset="100%" stop-color="#D8E2DC" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg-art3)" rx="12" filter="url(#sketch-art3)"/>
+  <rect x="15" y="15" width="370" height="270" fill="#FFFDF8" rx="8" stroke="#DDB892" stroke-width="2" stroke-dasharray="6,4"/>
+  
+  <g filter="url(#sketch-art3)">
+    <!-- Character Sheet: Miso Chan & Shoyu Kun -->
+    <!-- Character 1 (Left) -->
+    <circle cx="140" cy="115" r="32" fill="#FFE5D9" stroke="#6D4C41" stroke-width="2.5"/>
+    <path d="M 115 110 C 110 80, 165 80, 165 110 Z" fill="#DDA15E" stroke="#6D4C41" stroke-width="2"/>
+    <!-- Cute hair buns with naruto ribbon -->
+    <circle cx="115" cy="85" r="14" fill="#DDA15E" stroke="#6D4C41" stroke-width="2"/>
+    <circle cx="165" cy="85" r="14" fill="#DDA15E" stroke="#6D4C41" stroke-width="2"/>
+    <circle cx="115" cy="85" r="6" fill="#F46286"/>
+    <circle cx="165" cy="85" r="6" fill="#F46286"/>
+    <!-- Face -->
+    <circle cx="132" cy="115" r="2.5" fill="#4E342E"/>
+    <circle cx="148" cy="115" r="2.5" fill="#4E342E"/>
+    <path d="M 137 122 Q 140 126 143 122" fill="none" stroke="#4E342E" stroke-width="2" stroke-linecap="round"/>
+    <ellipse cx="126" cy="120" rx="5" ry="3" fill="#FFB4A2"/>
+    <ellipse cx="154" cy="120" rx="5" ry="3" fill="#FFB4A2"/>
+    <!-- Kimono Dress -->
+    <path d="M 120 148 L 160 148 L 175 220 L 105 220 Z" fill="#BC6C25" stroke="#4E342E" stroke-width="2.5"/>
+    <rect x="115" y="165" width="50" height="15" rx="3" fill="#606C38" stroke="#283618" stroke-width="2"/>
+
+    <!-- Character 2 (Right) -->
+    <circle cx="260" cy="115" r="32" fill="#FFE5D9" stroke="#6D4C41" stroke-width="2.5"/>
+    <!-- Boy messy hair -->
+    <path d="M 230 115 C 230 80, 290 80, 290 115 Z" fill="#3D5A80" stroke="#1D2D44" stroke-width="2"/>
+    <path d="M 240 90 L 235 75 L 250 85 L 260 70 L 270 85 L 285 75 L 280 90" fill="#3D5A80" stroke="#1D2D44" stroke-width="2"/>
+    <!-- Face -->
+    <path d="M 248 114 Q 254 110 258 114" fill="none" stroke="#1D2D44" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 264 114 Q 270 110 274 114" fill="none" stroke="#1D2D44" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="260" cy="123" r="1.5" fill="#1D2D44"/>
+    <path d="M 256 126 Q 262 130 268 126" fill="none" stroke="#1D2D44" stroke-width="2" stroke-linecap="round"/>
+    <!-- Chef Jacket -->
+    <path d="M 238 148 L 282 148 L 290 220 L 230 220 Z" fill="#457B9D" stroke="#1D2D44" stroke-width="2.5"/>
+    <path d="M 255 148 L 255 220" stroke="#1D2D44" stroke-width="2"/>
+  </g>
+  
+  <text x="30" y="270" font-family="'Mali', 'Sarabun', sans-serif" font-size="14" font-weight="bold" fill="#6F4E37">🥢 Character Concept: "Miso-chan & Shoyu-kun"</text>
+  <text x="340" y="270" font-family="'Mali', sans-serif" font-size="12" fill="#9C6644">2026</text>
+</svg>

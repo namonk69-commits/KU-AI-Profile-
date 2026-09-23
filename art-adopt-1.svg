@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <filter id="sketch-adopt1" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    <linearGradient id="bg-adopt1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFF1E6" />
+      <stop offset="100%" stop-color="#FDE2E4" />
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#bg-adopt1)" rx="12" filter="url(#sketch-adopt1)"/>
+  <rect x="15" y="15" width="370" height="270" fill="#FFFDF8" rx="8" stroke="#E0B1CB" stroke-width="2" stroke-dasharray="6,4"/>
+  
+  <g filter="url(#sketch-adopt1)">
+    <!-- Adoptable Character: Kitsune Ramen Spirit -->
+    <!-- Status Tag: CLOSED / ADOPTED -->
+    <rect x="30" y="30" width="90" height="26" rx="13" fill="#E76F51"/>
+    <text x="44" y="48" font-family="'Mali', sans-serif" font-size="12" font-weight="bold" fill="#FFF">✦ ADOPT #01</text>
+
+    <!-- Character Art -->
+    <g transform="translate(100, 30)">
+      <!-- Fox ears -->
+      <polygon points="60,60 40,15 85,45" fill="#F4A261" stroke="#8A421D" stroke-width="2.5"/>
+      <polygon points="55,50 45,25 75,45" fill="#FFE8D6"/>
+      <polygon points="140,60 160,15 115,45" fill="#F4A261" stroke="#8A421D" stroke-width="2.5"/>
+      <polygon points="145,50 155,25 125,45" fill="#FFE8D6"/>
+
+      <!-- Fluffy fox tail with ramen swirl -->
+      <path d="M 150 170 C 210 160, 230 110, 200 80 C 180 60, 160 85, 170 120 Z" fill="#F4A261" stroke="#8A421D" stroke-width="2.5"/>
+      <path d="M 195 85 C 190 70, 175 75, 180 90 Z" fill="#FFF"/>
+
+      <!-- Head & Face -->
+      <circle cx="100" cy="85" r="38" fill="#FFF2E8" stroke="#8A421D" stroke-width="2.5"/>
+      <!-- Soft Pink Hair -->
+      <path d="M 68 85 C 68 55, 132 55, 132 85 C 132 90, 120 70, 100 70 C 80 70, 68 90, 68 85 Z" fill="#FFB4A2" stroke="#8A421D" stroke-width="2"/>
+      
+      <!-- Anime Face -->
+      <path d="M 85 85 Q 92 80 98 85" fill="none" stroke="#2B1810" stroke-width="3" stroke-linecap="round"/>
+      <path d="M 105 85 Q 112 80 118 85" fill="none" stroke="#2B1810" stroke-width="3" stroke-linecap="round"/>
+      <ellipse cx="80" cy="92" rx="6" ry="4" fill="#FF8FAB"/>
+      <ellipse cx="120" cy="92" rx="6" ry="4" fill="#FF8FAB"/>
+      <path d="M 98 94 Q 101 98 104 94" fill="none" stroke="#8A421D" stroke-width="2" stroke-linecap="round"/>
+
+      <!-- Kimono & Ramen accessories -->
+      <path d="M 75 120 L 125 120 L 140 195 L 60 195 Z" fill="#FFF" stroke="#8A421D" stroke-width="2.5"/>
+      <rect x="70" y="135" width="60" height="16" fill="#F4A261" stroke="#8A421D" stroke-width="2"/>
+      <!-- Narutomaki brooch -->
+      <circle cx="100" cy="143" r="7" fill="#FFF" stroke="#E76F51" stroke-width="1.5"/>
+      <circle cx="100" cy="143" r="3" fill="#E76F51"/>
+    </g>
+
+    <!-- Side details / Color palette swatches -->
+    <text x="270" y="55" font-family="'Mali', sans-serif" font-size="13" font-weight="bold" fill="#8A421D">Tonkotsu Kitsune</text>
+    <text x="270" y="75" font-family="'Mali', 'Sarabun', sans-serif" font-size="11" fill="#7F5539">Type: Kemonomimi</text>
+    <text x="270" y="93" font-family="'Mali', 'Sarabun', sans-serif" font-size="11" fill="#7F5539">SB: 35$ / AB: 80$</text>
+    <text x="270" y="112" font-family="'Mali', sans-serif" font-size="11" font-weight="bold" fill="#2A9D8F">● Owner: @RamenLover</text>
+
+    <!-- Palette dots -->
+    <circle cx="280" cy="140" r="8" fill="#F4A261" stroke="#8A421D" stroke-width="1.5"/>
+    <circle cx="305" cy="140" r="8" fill="#FFB4A2" stroke="#8A421D" stroke-width="1.5"/>
+    <circle cx="330" cy="140" r="8" fill="#E76F51" stroke="#8A421D" stroke-width="1.5"/>
+    <circle cx="355" cy="140" r="8" fill="#264653" stroke="#8A421D" stroke-width="1.5"/>
+  </g>
+  
+  <text x="30" y="270" font-family="'Mali', 'Sarabun', sans-serif" font-size="14" font-weight="bold" fill="#6F4E37">🦊 Adoptable: "Tonkotsu Kitsune Spirit" (Adopted)</text>
+</svg>

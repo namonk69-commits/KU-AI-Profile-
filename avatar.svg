@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="100%" height="100%">
+  <defs>
+    <filter id="pencil-texture-avatar" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    <linearGradient id="skin-tone" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFF5EC" />
+      <stop offset="100%" stop-color="#FFE8D6" />
+    </linearGradient>
+    <linearGradient id="hair-tone" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#5B4033" />
+      <stop offset="60%" stop-color="#40291D" />
+      <stop offset="100%" stop-color="#2D1A10" />
+    </linearGradient>
+    <linearGradient id="bowl-hat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E76F51" />
+      <stop offset="100%" stop-color="#D64527" />
+    </linearGradient>
+  </defs>
+  
+  <g filter="url(#pencil-texture-avatar)">
+    <!-- Soft Background aura -->
+    <circle cx="150" cy="150" r="140" fill="#FFF8EE" stroke="#E6C8A5" stroke-width="4" stroke-dasharray="12, 6"/>
+    
+    <!-- Torso / Cozy Ramen Apron / Hoodie -->
+    <path d="M 90 280 C 90 230, 115 210, 150 210 C 185 210, 210 230, 210 280 Z" 
+          fill="#F4A261" stroke="#8A421D" stroke-width="3"/>
+    
+    <!-- Ramen Bowl Graphic on Apron -->
+    <path d="M 135 245 Q 150 260 165 245 Z" fill="#E76F51" stroke="#682A0F" stroke-width="2"/>
+    <line x1="140" y1="240" x2="160" y2="240" stroke="#FFD166" stroke-width="3"/>
+    
+    <!-- Hair (Back) -->
+    <path d="M 85 140 C 75 190, 85 240, 100 250 C 110 230, 110 200, 110 180 Z" fill="url(#hair-tone)"/>
+    <path d="M 215 140 C 225 190, 215 240, 200 250 C 190 230, 190 200, 190 180 Z" fill="url(#hair-tone)"/>
+
+    <!-- Neck -->
+    <rect x="138" y="180" width="24" height="30" rx="6" fill="url(#skin-tone)" stroke="#B37853" stroke-width="2"/>
+    <path d="M 138 190 Q 150 200 162 190" fill="#E8BBA0" opacity="0.5"/>
+
+    <!-- Head / Face -->
+    <path d="M 100 135 C 95 180, 120 205, 150 205 C 180 205, 205 180, 200 135 C 195 95, 105 95, 100 135 Z" 
+          fill="url(#skin-tone)" stroke="#8A421D" stroke-width="3"/>
+
+    <!-- Cute Blush Cheeks -->
+    <ellipse cx="118" cy="165" rx="14" ry="9" fill="#FF8FAB" opacity="0.6"/>
+    <ellipse cx="182" cy="165" rx="14" ry="9" fill="#FF8FAB" opacity="0.6"/>
+    <!-- Pencil blush lines -->
+    <line x1="112" y1="166" x2="124" y2="164" stroke="#D1496D" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="176" y1="166" x2="188" y2="164" stroke="#D1496D" stroke-width="1.5" stroke-linecap="round"/>
+
+    <!-- Eyes (Cute Happy Curved / Expressive manga eyes) -->
+    <path d="M 115 145 Q 125 138 135 146" fill="none" stroke="#2B1810" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="125" cy="148" r="2" fill="#2B1810"/>
+    
+    <path d="M 165 146 Q 175 138 185 145" fill="none" stroke="#2B1810" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="175" cy="148" r="2" fill="#2B1810"/>
+
+    <!-- Eyebrows -->
+    <path d="M 116 133 Q 126 130 134 135" fill="none" stroke="#40291D" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M 166 135 Q 174 130 184 133" fill="none" stroke="#40291D" stroke-width="2.5" stroke-linecap="round"/>
+
+    <!-- Nose & Happy Smile with tiny noodle! -->
+    <circle cx="150" cy="160" r="1.5" fill="#8A421D"/>
+    <path d="M 143 172 Q 150 182 157 172" fill="none" stroke="#8A421D" stroke-width="3" stroke-linecap="round"/>
+    
+    <!-- Cute noodle slurp at mouth corner -->
+    <path d="M 152 178 Q 155 195 160 215" fill="none" stroke="#F4A220" stroke-width="3.5" stroke-linecap="round"/>
+
+    <!-- Hair (Front Bangs) -->
+    <path d="M 98 130 C 110 145, 125 140, 132 125 C 138 142, 160 140, 168 126 C 175 140, 195 140, 202 128 C 205 105, 195 90, 150 85 C 105 90, 95 105, 98 130 Z" 
+          fill="url(#hair-tone)" stroke="#2B1810" stroke-width="2.5"/>
+    <!-- Hair Highlights -->
+    <path d="M 110 115 Q 150 110 190 115" fill="none" stroke="#A47551" stroke-width="3" stroke-linecap="round" opacity="0.6"/>
+
+    <!-- Cute Ramen Bowl Beanie / Beret Hat -->
+    <path d="M 85 92 C 85 45, 215 45, 215 92 C 215 98, 85 98, 85 92 Z" 
+          fill="url(#bowl-hat)" stroke="#701C08" stroke-width="3"/>
+    <!-- Hat rim pattern (traditional ramen spiral border) -->
+    <rect x="83" y="88" width="134" height="12" rx="4" fill="#264653" stroke="#12232A" stroke-width="2"/>
+    <line x1="95" y1="94" x2="105" y2="94" stroke="#FFF" stroke-width="2"/>
+    <line x1="115" y1="94" x2="125" y2="94" stroke="#FFF" stroke-width="2"/>
+    <line x1="135" y1="94" x2="145" y2="94" stroke="#FFF" stroke-width="2"/>
+    <line x1="155" y1="94" x2="165" y2="94" stroke="#FFF" stroke-width="2"/>
+    <line x1="175" y1="94" x2="185" y2="94" stroke="#FFF" stroke-width="2"/>
+    <line x1="195" y1="94" x2="205" y2="94" stroke="#FFF" stroke-width="2"/>
+
+    <!-- Narutomaki on hat -->
+    <g transform="translate(190, 48) scale(0.35)">
+      <circle cx="40" cy="40" r="38" fill="#FFF" stroke="#663322" stroke-width="5"/>
+      <path d="M 40 15 C 60 15, 65 35, 60 45 C 55 55, 35 60, 25 45 C 20 35, 30 25, 40 30" fill="none" stroke="#F46286" stroke-width="8" stroke-linecap="round"/>
+    </g>
+    <!-- Artist Yellow Pencil Behind Ear -->
+    <g transform="translate(70, 75) rotate(-35)">
+      <polygon points="10,0 45,0 45,12 10,12" fill="#F4A220" stroke="#4A2500" stroke-width="1.5"/>
+      <polygon points="0,6 10,0 10,12" fill="#E8D5B5" stroke="#4A2500" stroke-width="1.5"/>
+      <polygon points="0,6 3,4.5 3,7.5" fill="#2B1810"/>
+      <rect x="45" y="0" width="8" height="12" fill="#FF8FAB" stroke="#4A2500" stroke-width="1.5"/>
+    </g>
+
+    <!-- Sparkles -->
+    <polygon points="230,110 234,120 244,124 234,128 230,138 226,128 216,124 226,120" fill="#F4A220"/>
+    <polygon points="65,160 68,168 76,171 68,174 65,182 62,174 54,171 62,168" fill="#E76F51"/>
+  </g>
+</svg>
